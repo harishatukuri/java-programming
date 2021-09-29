@@ -1,5 +1,5 @@
 import java.util.*;
-class lab1
+class Lab1
 {
  public static void main(String args[])
  {
@@ -36,5 +36,3 @@ class lab1
 }
     
  
-  
-  
