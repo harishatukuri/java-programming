@@ -1,52 +1,20 @@
-import java.util.*;
-class demo
+class Lab10
 {
-   int fib(int n)
-   {
-     if(n==1)
-      return 1;
-     else if(n==2)
-       return 1;
-     else
-       return(fib(n-1)+fib(n-2));
-   }
+ static int count=0;
+ static void incr()
+ {
+  count++;
+ }
+ public static void main(String args[])
+ {
+ Lab10 c1=new Lab10();
+ incr();
+ Lab10 c2=new Lab10();
+ incr();
+ Lab10 c3=new Lab10();
+ incr();
+ Lab10 c4=new Lab10();
+ incr();
+ System.out.println("number of objects="+count);
+ }
 }
-class lab11
-{
-  public static void main(String args[])
-  {
-    Scanner s=new Scanner(System.in);
-    System.out.println("enter n value");
-    int n=s.nextInt();
-    demo d=new demo();
-    int rec=0;
-    System.out.println("the recursive fibbonocci serice is");
-    System.out.println(rec);
-    int i;
-    for(i=1;i<n;i++)
-    {
-      rec=d.fib(i);
-      System.out.println(rec);
-    }
-    System.out.println(n+"th value of serice is"+rec);
-    int a=1,b=1,c=0;
-    System.out.println("the non recursive fibonocci serice is");
-    System.out.println(c);
-    System.out.println(a);
-    System.out.println(b);
-    for(i=1;i<n-2;i++)
-    {
-      c=a+b;
-      System.out.println(c);
-      a=b;
-      b=c;
-    }
-    
-    
-    System.out.println(n+"th value of serice is"+c);
-  }
-} 
-
-
-
-    
